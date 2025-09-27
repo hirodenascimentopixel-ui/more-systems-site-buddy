@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
@@ -10,6 +11,7 @@ import {
 } from "lucide-react";
 
 const Services = () => {
+  const [expandedService, setExpandedService] = useState<number | null>(null);
   const services = [
     {
       icon: Settings,
@@ -70,7 +72,11 @@ const Services = () => {
     };
     
     const message = messages[serviceType as keyof typeof messages] || messages.installation;
-    window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/351933778388?text=${encodeURIComponent(message)}`, "_blank");
+  };
+
+  const toggleService = (index: number) => {
+    setExpandedService(expandedService === index ? null : index);
   };
 
   return (
@@ -97,7 +103,10 @@ const Services = () => {
           {services.map((service, index) => (
             <Card key={index} className="relative bg-gradient-card shadow-card hover:shadow-lg transition-all duration-300 border-0 group">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div 
+                  className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 cursor-pointer"
+                  onClick={() => toggleService(index)}
+                >
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
                 <CardTitle className="text-xl font-bold text-dark-gray mb-2">
@@ -108,26 +117,28 @@ const Services = () => {
                 </CardDescription>
               </CardHeader>
 
-              <CardContent className="space-y-6">
-                {/* Features List */}
-                <div className="space-y-3">
-                  {service.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center space-x-3">
-                      <CheckCircle className="w-4 h-4 text-success-green flex-shrink-0" />
-                      <span className="text-sm text-foreground">{feature}</span>
-                    </div>
-                  ))}
-                </div>
+              {expandedService === index && (
+                <CardContent className="space-y-6 animate-fade-in">
+                  {/* Features List */}
+                  <div className="space-y-3">
+                    {service.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className="flex items-center space-x-3">
+                        <CheckCircle className="w-4 h-4 text-success-green flex-shrink-0" />
+                        <span className="text-sm text-foreground">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
 
-                {/* CTA Button */}
-                <Button 
-                  variant="outline" 
-                  className="w-full hover:border-cool-blue hover:text-cool-blue"
-                  onClick={() => handleWhatsAppClick(service.type)}
-                >
-                  Solicitar Orçamento
-                </Button>
-              </CardContent>
+                  {/* CTA Button */}
+                  <Button 
+                    variant="outline" 
+                    className="w-full hover:border-cool-blue hover:text-cool-blue"
+                    onClick={() => handleWhatsAppClick(service.type)}
+                  >
+                    Solicitar Orçamento
+                  </Button>
+                </CardContent>
+              )}
             </Card>
           ))}
         </div>
