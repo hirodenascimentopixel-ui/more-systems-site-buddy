@@ -47,6 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // MORE SISTEMS custom colors
+        "cool-blue": "hsl(var(--cool-blue))",
+        "deep-blue": "hsl(var(--deep-blue))",
+        "light-blue": "hsl(var(--light-blue))",
+        "professional-gray": "hsl(var(--professional-gray))",
+        "dark-gray": "hsl(var(--dark-gray))",
+        "success-green": "hsl(var(--success-green))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +69,20 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-card": "var(--gradient-card)",
+      },
+      boxShadow: {
+        "soft": "var(--shadow-soft)",
+        "card": "var(--shadow-card)",
+        "button": "var(--shadow-button)",
+      },
+      transitionTimingFunction: {
+        "smooth": "var(--transition-smooth)",
+        "bounce": "var(--transition-bounce)",
       },
       keyframes: {
         "accordion-down": {
