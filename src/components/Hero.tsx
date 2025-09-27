@@ -1,31 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { Phone, CheckCircle, Clock, Award } from "lucide-react";
 import heroImage from "@/assets/hero-ac-installation.jpg";
-
 const Hero = () => {
   const handleWhatsAppClick = () => {
     window.open("https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para instalação de ar-condicionado.", "_blank");
   };
-
   const handleCallClick = () => {
     window.open("tel:+5511999999999", "_blank");
   };
-
-  const features = [
-    { icon: CheckCircle, text: "Técnicos certificados" },
-    { icon: Clock, text: "Atendimento rápido" },
-    { icon: Award, text: "Garantia de qualidade" }
-  ];
-
-  return (
-    <section id="home" className="relative min-h-screen flex items-center pt-16">
+  const features = [{
+    icon: CheckCircle,
+    text: "Técnicos certificados"
+  }, {
+    icon: Clock,
+    text: "Atendimento rápido"
+  }, {
+    icon: Award,
+    text: "Garantia de qualidade"
+  }];
+  return <section id="home" className="relative min-h-screen flex items-center pt-16">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Instalação profissional de ar-condicionado"
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt="Instalação profissional de ar-condicionado" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40"></div>
       </div>
 
@@ -40,7 +36,7 @@ const Hero = () => {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-gray leading-tight">
-                <span className="text-cool-blue">MORE SISTEMS</span>
+                <span className="text-cool-blue">MOORE SISTEMS</span>
                 <br />
                 Ar-condicionado com 
                 <span className="text-cool-blue"> qualidade</span>
@@ -54,32 +50,20 @@ const Hero = () => {
 
             {/* Features */}
             <div className="flex flex-wrap gap-6">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-center space-x-2">
+              {features.map((feature, index) => <div key={index} className="flex items-center space-x-2">
                   <feature.icon className="w-5 h-5 text-success-green" />
                   <span className="text-sm font-medium text-foreground">{feature.text}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                variant="hero" 
-                size="lg" 
-                onClick={handleWhatsAppClick}
-                className="text-lg px-8 py-6"
-              >
+              <Button variant="hero" size="lg" onClick={handleWhatsAppClick} className="text-lg px-8 py-6">
                 <Phone className="w-5 h-5 mr-2" />
                 Solicitar Orçamento Grátis
               </Button>
               
-              <Button 
-                variant="outline" 
-                size="lg"
-                onClick={handleCallClick}
-                className="text-lg px-8 py-6 border-2 hover:border-cool-blue hover:text-cool-blue"
-              >
+              <Button variant="outline" size="lg" onClick={handleCallClick} className="text-lg px-8 py-6 border-2 hover:border-cool-blue hover:text-cool-blue">
                 <Phone className="w-5 h-5 mr-2" />
                 (11) 99999-9999
               </Button>
@@ -106,8 +90,6 @@ const Hero = () => {
           <div className="hidden lg:block"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
