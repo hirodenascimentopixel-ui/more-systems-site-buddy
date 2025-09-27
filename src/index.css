@@ -37,22 +37,22 @@ All colors MUST be HSL.
     --ring: 210 95% 50%;
 
     /* Custom design tokens for MORE SISTEMS */
-    --cool-blue: 210 95% 50%;
-    --deep-blue: 210 85% 45%;
-    --light-blue: 210 90% 96%;
+    --cool-blue: 200 90% 45%;         /* Ocean blue for icons */
+    --deep-blue: 200 100% 35%;        /* Darker ocean blue */
+    --light-blue: 200 80% 92%;        /* Light blue backgrounds */
     --professional-gray: 220 14% 96%;
     --dark-gray: 220 14% 16%;
     --success-green: 142 76% 36%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 95% 50%), hsl(210 85% 45%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 95% 50%) 0%, hsl(210 85% 45%) 50%, hsl(220 14% 96%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 14% 98%));
+    --gradient-primary: linear-gradient(135deg, hsl(200 90% 45%), hsl(200 100% 35%));
+    --gradient-hero: linear-gradient(135deg, hsl(200 90% 45%) 0%, hsl(200 100% 35%) 50%, hsl(200 80% 96%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(200 80% 98%));
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(210 95% 50% / 0.1);
+    --shadow-soft: 0 4px 20px hsl(200 90% 45% / 0.1);
     --shadow-card: 0 8px 30px hsl(220 14% 16% / 0.08);
-    --shadow-button: 0 4px 15px hsl(210 95% 50% / 0.25);
+    --shadow-button: 0 4px 15px hsl(200 90% 45% / 0.25);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,5 +123,6 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background: linear-gradient(135deg, hsl(200 80% 95% / 0.3) 0%, hsl(200 60% 90% / 0.2) 100%);
   }
 }

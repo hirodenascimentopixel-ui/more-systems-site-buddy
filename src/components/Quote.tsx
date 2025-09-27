@@ -51,7 +51,7 @@ const Quote = () => {
 Favor entrar em contato para orçamento.
     `.trim();
 
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/351933778388?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
 
     toast({
@@ -103,7 +103,7 @@ Favor entrar em contato para orçamento.
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 opacity-80" />
                   <div>
-                    <p className="font-medium">(11) 99999-9999</p>
+                    <p className="font-medium">+351 933778388</p>
                     <p className="text-sm opacity-80">WhatsApp e chamadas</p>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ Favor entrar em contato para orçamento.
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 opacity-80" />
                   <div>
-                    <p className="font-medium">São Paulo - SP</p>
+                    <p className="font-medium">Portugal</p>
                     <p className="text-sm opacity-80">Atendemos toda a região</p>
                   </div>
                 </div>
@@ -119,8 +119,8 @@ Favor entrar em contato para orçamento.
                 <div className="flex items-center space-x-3">
                   <Clock className="w-5 h-5 opacity-80" />
                   <div>
-                    <p className="font-medium">Seg - Sex: 8h às 18h</p>
-                    <p className="text-sm opacity-80">Sáb: 8h às 14h</p>
+                    <p className="font-medium">Seg - Sáb: 09h às 17h</p>
+                    <p className="text-sm opacity-80">Domingos: Fechado</p>
                   </div>
                 </div>
               </CardContent>

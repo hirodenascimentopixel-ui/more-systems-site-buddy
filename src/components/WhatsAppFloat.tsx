@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/5511999999999?text=Olá! Gostaria de falar sobre serviços de ar-condicionado.", "_blank");
+    window.open("https://wa.me/351933778388?text=Olá! Gostaria de falar sobre serviços de ar-condicionado.", "_blank");
   };
 
   return (
