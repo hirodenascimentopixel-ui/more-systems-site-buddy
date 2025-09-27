@@ -45,8 +45,8 @@ const About = () => {
             <span className="text-sm font-medium text-cool-blue">Sobre Nós</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold text-dark-gray mb-4 text-center text-sky-600">
-            Conheça a <span className="text-cool-blue">MORE SISTEMS</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-cool-blue mb-4 text-center">
+            Conheça a MORE SISTEMS
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -57,7 +57,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Company Story */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-dark-gray mb-4">
+            <h3 className="text-2xl font-bold text-cool-blue mb-4">
               Nossa História
             </h3>
             
@@ -71,7 +71,7 @@ const About = () => {
 
             {/* Differentials */}
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold text-dark-gray">Nossos Diferenciais:</h4>
+              <h4 className="text-lg font-semibold text-cool-blue">Nossos Diferenciais:</h4>
               <div className="grid sm:grid-cols-2 gap-3">
                 {differentials.map((differential, index) => <div key={index} className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-success-green flex-shrink-0 mt-0.5" />
@@ -108,7 +108,7 @@ const About = () => {
                 <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
                   <value.icon className="w-8 h-8 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-dark-gray">{value.title}</h4>
+                <h4 className="text-xl font-bold text-cool-blue">{value.title}</h4>
                 <p className="text-muted-foreground leading-relaxed">{value.description}</p>
               </CardContent>
             </Card>)}

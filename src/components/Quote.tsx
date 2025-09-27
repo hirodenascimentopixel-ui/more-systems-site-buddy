@@ -80,8 +80,8 @@ Favor entrar em contato para orçamento.
             <span className="text-sm font-medium text-cool-blue">Orçamento Gratuito</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold text-dark-gray mb-4">
-            Solicite seu <span className="text-cool-blue">Orçamento</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-cool-blue mb-4">
+            Solicite seu Orçamento
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -128,7 +128,7 @@ Favor entrar em contato para orçamento.
 
             {/* Quick Benefits */}
             <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-dark-gray">Por que escolher a MORE SISTEMS?</h3>
+              <h3 className="text-lg font-semibold text-cool-blue">Por que escolher a MORE SISTEMS?</h3>
               <div className="space-y-3 text-sm text-muted-foreground">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-cool-blue rounded-full"></div>
@@ -154,7 +154,7 @@ Favor entrar em contato para orçamento.
           <div className="lg:col-span-2">
             <Card className="bg-gradient-card shadow-card border-0">
               <CardHeader>
-                <CardTitle className="text-2xl text-dark-gray">Formulário de Orçamento</CardTitle>
+                <CardTitle className="text-2xl text-cool-blue">Formulário de Orçamento</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">

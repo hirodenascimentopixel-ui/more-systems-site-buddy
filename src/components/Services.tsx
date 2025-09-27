@@ -89,8 +89,8 @@ const Services = () => {
             <span className="text-sm font-medium text-cool-blue">Nossos Serviços</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold text-dark-gray mb-4">
-            Soluções Completas em <span className="text-cool-blue">Ar-Condicionado</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-cool-blue mb-4">
+            Soluções Completas em Ar-Condicionado
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -109,7 +109,7 @@ const Services = () => {
                 >
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-xl font-bold text-dark-gray mb-2">
+                <CardTitle className="text-xl font-bold text-cool-blue mb-2">
                   {service.title}
                 </CardTitle>
                 <CardDescription className="text-muted-foreground leading-relaxed">
@@ -146,7 +146,7 @@ const Services = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <div className="bg-gradient-hero rounded-2xl p-8 md:p-12 text-white">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-cool-blue mb-4">
               Precisa de atendimento especializado?
             </h3>
             <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">

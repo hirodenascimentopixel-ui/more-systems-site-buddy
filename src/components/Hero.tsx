@@ -35,11 +35,10 @@ const Hero = () => {
                 <span className="text-sm font-medium text-cool-blue">Empresa especializada</span>
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-gray leading-tight">
-                <span className="text-cool-blue">MOORE SISTEMS</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cool-blue leading-tight">
+                MOORE SISTEMS
                 <br />
-                Ar-condicionado com 
-                <span className="text-cool-blue"> qualidade</span>
+                Ar-condicionado com qualidade
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
