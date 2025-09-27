@@ -45,7 +45,7 @@ const About = () => {
             <span className="text-sm font-medium text-cool-blue">Sobre Nós</span>
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold text-dark-gray mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-dark-gray mb-4 text-center text-sky-600">
             Conheça a <span className="text-cool-blue">MORE SISTEMS</span>
           </h2>
           
