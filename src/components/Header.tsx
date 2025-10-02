@@ -21,7 +21,7 @@ const Header = () => {
     href: "#contact"
   }];
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para ar-condicionado.", "_blank");
+    window.open("htts://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para ar-condicionado.", "_blank");
   };
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b shadow-soft">
       <div className="container mx-auto px-4">
