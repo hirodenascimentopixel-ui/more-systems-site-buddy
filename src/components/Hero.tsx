@@ -3,10 +3,10 @@ import { Phone, CheckCircle, Clock, Award } from "lucide-react";
 import heroImage from "@/assets/hero-ac-installation.jpg";
 const Hero = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para instalação de ar-condicionado.", "_blank");
+    window.open("https://wa.me/351933778388?text=Olá! Gostaria de solicitar um orçamento para instalação de ar-condicionado.", "_blank");
   };
   const handleCallClick = () => {
-    window.open("tel:+5511999999999", "_blank");
+    window.open("tel:+351933778388", "_blank");
   };
   const features = [{
     icon: CheckCircle,

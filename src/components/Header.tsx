@@ -21,7 +21,7 @@ const Header = () => {
     href: "#contact"
   }];
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para ar-condicionado.", "_blank");
+    window.open("https://wa.me/351933778388?text=Olá! Gostaria de solicitar um orçamento para ar-condicionado.", "_blank");
   };
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b shadow-soft">
       <div className="container mx-auto px-4">
@@ -54,7 +54,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="w-4 h-4" />
-              <span>(11) 99999-9999</span>
+              <span>+351 933 778 388</span>
             </div>
             <Button variant="hero" onClick={handleWhatsAppClick}>
               Orçamento Grátis
@@ -76,7 +76,7 @@ const Header = () => {
             <div className="flex flex-col space-y-3 pt-4 border-t">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4" />
-                <span>(11) 99999-9999</span>
+                <span>+351 933 778 388</span>
               </div>
               <Button variant="hero" onClick={handleWhatsAppClick} className="w-full">
                 Solicitar Orçamento
