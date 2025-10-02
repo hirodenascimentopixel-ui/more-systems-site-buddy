@@ -36,7 +36,7 @@ const Hero = () => {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cool-blue leading-tight text-center">
-                MOORE SISTEMS
+                MORE SYSTEMS
                 <br />
                 Ar-condicionado com qualidade
               </h1>

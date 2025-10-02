@@ -39,7 +39,15 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {navigation.map(item => {})}
+            {navigation.map(item => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              >
+                {item.name}
+              </a>
+            ))}
           </nav>
 
           {/* Contact Info & CTA */}
