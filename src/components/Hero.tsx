@@ -35,7 +35,7 @@ const Hero = () => {
                 <span className="text-sm font-medium text-cool-blue">Empresa especializada</span>
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cool-blue leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cool-blue leading-tight text-center">
                 MOORE SISTEMS
                 <br />
                 Ar-condicionado com qualidade
@@ -56,33 +56,10 @@ const Hero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" onClick={handleWhatsAppClick} className="text-lg px-8 py-6">
-                <Phone className="w-5 h-5 mr-2" />
-                Solicitar Orçamento Grátis
-              </Button>
-              
-              <Button variant="outline" size="lg" onClick={handleCallClick} className="text-lg px-8 py-6 border-2 hover:border-cool-blue hover:text-cool-blue">
-                <Phone className="w-5 h-5 mr-2" />
-                (11) 99999-9999
-              </Button>
-            </div>
+            
 
             {/* Trust indicators */}
-            <div className="flex items-center space-x-8 pt-6 border-t border-border/50">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-cool-blue">500+</div>
-                <div className="text-sm text-muted-foreground">Instalações</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-cool-blue">5 anos</div>
-                <div className="text-sm text-muted-foreground">Experiência</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-cool-blue">24h</div>
-                <div className="text-sm text-muted-foreground">Garantia</div>
-              </div>
-            </div>
+            
           </div>
 
           {/* Right side - additional visual space for larger screens */}
